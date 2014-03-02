@@ -1,0 +1,6 @@
+---
+- name: Install build-essential
+  apt: pkg=build-essential
+
+- name: Install Perl dependencies
+  shell: curl -L cpanmin.us | perl - Mojolicious Modern::Perl DBIx::Class DBIx::Class::Migration DateTime DateTime::Format::SQLite --force
