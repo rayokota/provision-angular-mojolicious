@@ -19,7 +19,7 @@
 - name: Install SQLite3
   apt: pkg=sqlite3
 
-- name: Install httplib2
+- name: Install httplib2 (for Ansible uri module)
   apt: pkg=python-httplib2
 
 - name: Install python-software-properties so the apt_repository module will work properly
